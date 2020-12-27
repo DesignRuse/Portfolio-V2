@@ -1,0 +1,20 @@
+@media(min-width:320px) and (max-width:479px) {
+	.contentBoxMedium {
+		padding: 55px 0 125px 0
+	}
+	h1 {
+		font-size: 20px;
+		font-weight: 900
+	}
+	#footer .footerText {
+		font-size: 11px;
+		line-height: 22px
+	}
+	#footer .rightAligned {
+		text-align: center
+	}
+	#footer .leftAligned {
+		text-align: center
+	}
+}
+

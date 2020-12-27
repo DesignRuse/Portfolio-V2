@@ -1,0 +1,381 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	background: url('../images/easter-eggs-coloring-picjumbo-com.webp');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #f0c420;
+    height: 100vh;
+}
+
+.row {
+	margin: 0 auto
+}
+
+
+/*-------------------------------------------*/
+/*-------- H TAGS ---------------------------*/
+/*-------------------------------------------*/
+
+h1 {
+	color: #1c8adb;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-size: 1.938em; //31px
+	font-weight: 700;
+}
+
+h2 {
+	color: #1c8adb;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-size: 1.063em; //17px
+	font-weight: 700;
+	margin-bottom: 1.250em; //20px
+}
+
+/*-------------------------------------------*/
+/*-------- H TAGS ---------------------------*/
+/*-------------------------------------------*/
+
+
+/*-------------------------------------------*/
+/*-------- HORIZONTAL LINES -----------------*/
+/*-------------------------------------------*/
+
+hr {
+	padding: 0;
+	border: 0;
+	height: 1px; //1px
+	background-image: linear-gradient(left, rgba(240, 196, 32, 0), rgba(240, 196, 32, 0.75), rgba(240, 196, 32, 0));
+	background-image: -webkit-linear-gradient(left, rgba(240, 196, 32, 0), rgba(240, 196, 32, 0.75), rgba(240, 196, 32, 0));
+	background-image: -moz-linear-gradient(left, rgba(240, 196, 32, 0), rgba(0, 0, 0, 0.75), rgba(240, 196, 32, 0));
+	background-image: -ms-linear-gradient(left, rgba(240, 196, 32, 0), rgba(0, 0, 0, 0.75), rgba(240, 196, 32, 0));
+	background-image: -o-linear-gradient(left, rgba(240, 196, 32, 0), rgba(0, 0, 0, 0.75), rgba(240, 196, 32, 0));
+	color: #f0c420;
+	text-align: center;
+}
+
+/*-------------------------------------------*/
+/*-------- HORIZONTAL LINES -----------------*/
+/*-------------------------------------------*/
+
+
+/*-------------------------------------------*/
+/*-------- CONTENT BOXES --------------------*/
+/*-------------------------------------------*/
+
+.contentBoxSmall {
+	padding: 1.250em 0;
+}
+
+.contentBoxLarge {
+	padding: 3.438em 0 8.750em 0;
+}
+
+/*-------------------------------------------*/
+/*-------- CONTENT BOXES --------------------*/
+/*-------------------------------------------*/
+
+
+/*-------------------------------------------*/
+/*-------- MARGINS --------------------------*/
+/*-------------------------------------------*/
+
+.marginTop20Px {
+	margin-top: 1.250em;
+}
+
+.marginBottom10Px {
+	margin-bottom: 0.625em;
+}
+
+.marginTop10Px {
+	margin-top: 0.625em;
+}
+
+/*-------------------------------------------*/
+/*-------- MARGINS --------------------------*/
+/*-------------------------------------------*/
+
+
+/*-------------------------------------------*/
+/*-------- MODAL WINDOWS --------------------*/
+/*-------------------------------------------*/
+
+.modalWindow {
+	width: 100%;
+    height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	transition: 1s;
+}
+
+/*-------------------------------------------*/
+/*-------- MODAL WINDOWS --------------------*/
+/*-------------------------------------------*/
+
+
+/*-------------------------------------------*/
+/*-------- MODAL BODIES ---------------------*/
+/*-------------------------------------------*/
+
+.modalBody {
+	width: 100%;
+	height: 100%;
+    padding: 0 20px 20px 20px;
+	margin: 0 auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/*-------------------------------------------*/
+/*-------- MODAL BODIES ---------------------*/
+/*-------------------------------------------*/
+
+
+/*-------------------------------------------*/
+/*-------- MODAL HEADERS --------------------*/
+/*-------------------------------------------*/
+
+.modalHeader {
+	padding: 15px;
+}
+
+/*-------------------------------------------*/
+/*-------- MODAL HEADERS --------------------*/
+/*-------------------------------------------*/
+
+
+/*-------------------------------------------*/
+/*-------- MODAL WINDOW CLOSE BUTTONS -------*/
+/*-------------------------------------------*/
+
+.modalHeader .closeBtn {
+	float: right;
+	font-size: 48px;
+	font-weight: bold;
+	line-height: 48px;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.modalHeader .closeBtn:hover,
+.modalHeader .closeBtn:focus {
+	color: rgba(0, 0, 0);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*-------------------------------------------*/
+/*-------- MODAL WINDOW CLOSE BUTTONS -------*/
+/*-------------------------------------------*/
+
+
+/*-------------------------------------------*/
+/*-------- MODAL CONTENTS -------------------*/
+/*-------------------------------------------*/
+
+.modalContent {
+	height: auto;
+	background-color: rgba(255, 255, 255, 0.97);
+	padding: 20px;
+	border-radius: 8px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*-------------------------------------------*/
+/*-------- MODAL CONTENTS -------------------*/
+/*-------------------------------------------*/
+
+
+#pageWrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+#pageWrapper #launchPadSection {
+	width: 100%;
+	height: auto;
+	padding: 60px 20px 20px 20px;
+}
+
+#launchPadSection #launchPad {
+	width: 100%;
+	max-width: 450px;
+	height: auto;
+	background-color: rgba(255, 255, 255, 0.97);
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	border-radius: 8px;
+	margin: 0 auto;
+}
+
+.titleImage {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-top: -60px;
+}
+
+.titleImage img {
+	display: block;
+	width: 180px;
+	height: 180px;
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 50%;
+	border: 8px solid #1c8adb;
+	background-color: #f0c420;
+	margin: 0 auto;
+}
+
+#launchPad p {
+	font-size: 15px;
+	text-align: justify;
+	color: #4d5763;
+}
+
+#launchPad button,
+#contactForm button {
+	width: 100%;
+	color: #fff;
+	font-size: 15px;
+	padding: 5px;
+	border-radius: 20px;
+	border: 0;
+	outline: 0;
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#launchPad button i,
+#contactForm button i {
+	font-size: 20px;
+	font-weight: bold;
+	margin-right: 8px;
+}
+
+#pageWrapper #contactSection {
+	display: none;
+}
+
+#contactSection #contact {
+	background: url('../images/yummy-donuts-on-yellow-background-picjumbo-com.webp');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#contact #contactBody {
+	width: 100%;
+	max-width: 450px;
+}
+
+#contactForm {
+	display: block;
+	margin-top: 20px;
+}
+
+#contactForm .formElements {
+	border: 1px solid #999;
+	margin: 10px 0;
+	border-radius: 20px;
+}
+
+.formElements input[type=text],
+.formElements input[type=email],
+.formElements textarea {
+	width: 100%;
+	border: 0;
+	background: 0;
+	outline: 0;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 15px;
+	border-radius: 20px;
+	outline: 0;
+}
+
+.formElements input[type=submit] {
+	width: 100%;
+}
+
+#pageWrapper #portfolioSection {
+	display: none;
+}
+
+#portfolioSection #portfolio {
+	background: url('../images/ice-pops-picjumbo-com.webp');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#portfolio #portfolioBody {
+	width: 100%;
+	max-width: 1000px;
+}
+
+#portfolioBody .container {
+	padding: 0;
+}
+
+#portfolio a {
+	display: block;
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+#portfolio a:hover {
+	transform: scale(1.1);
+	transition: 1s;
+}
+
+#footer {
+	width: 100%;
+	height: auto;
+	background-color: #21afde;
+	margin-top: auto;
+}
+
+#footer .footerText {
+	font-size: 0.750em;
+	/*12px*/
+	line-height: 0.875em;
+	/*14px*/
+	color: #fff;
+	margin: 0;
+}
+
+#footer .rightAligned {
+	text-align: left;
+}
+
+#footer .leftAligned {
+	text-align: right;
+}
