@@ -6,15 +6,13 @@
 		font-size: 20px;
 		font-weight: 900
 	}
-	#footer .footerText {
-		font-size: 11px;
-		line-height: 22px
+
+	#portfolios #ro {
+		flex-direction: column;
 	}
-	#footer .rightAligned {
-		text-align: center
-	}
-	#footer .leftAligned {
-		text-align: center
+
+	.item {
+		flex: 0 0 100%;
 	}
 }
 

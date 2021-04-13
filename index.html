@@ -5,81 +5,70 @@
 		<meta name="p:domain_verify" content="a2a922fa2f35a44a8bd90faaf03b2ac4"/>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link href="vendors/css/normalize.css" rel="stylesheet" type="text/css"/>
 		<link href="vendors/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 		<link href="vendors/css/ionicons.min.css" rel="stylesheet" type="text/css"/>
 		<link href="vendors/css/lightbox.min.css" rel="stylesheet" type="text/css"/>
 		<link href="resources/css/main.css" rel="stylesheet" type="text/css"/>
 		<link href="resources/css/responsive.css" rel="stylesheet" type="text/css"/>
-		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700,800,900&display=swap&subset=latin-ext" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet" />
 		<script src="vendors/js/lightbox-plus-jquery.min.js"></script>
 	</head>
 	<body>
-		<div id="pageWrapper">
-			<div id="launchPadSection" class="contentBoxLarge">
-				<div id="launchPad">
-					<div class="titleImage"><img src="resources/images/skdas-seated.webp" alt="myImage"/></div>
+		<div id="wrapper">
+			<div id="main-section">
+				<div id="main">
+					<div class="title-image"><img src="resources/images/skdas-seated.webp" alt="myImage"/></div>
 					<hr/>
 					<h1>Sanjeev Kumar Das</h1>
 					<hr/>
 					<h2>Web Developer &#8212; Web Designer</h2>
-					<p>Passionate Web and Graphic Designer with expertise in HTML5, CSS3, Bootstrap, JavaScript, logo design, UI design, banner design and flyer design. Also recognized as a unique problem solver.</p>
+					<p>Passionate Web Developer with expertise in HTML5, CSS3, JavaScript, Responsive design, logo design, One page websites etc. Also recognized as a unique problem solver.</p>
 					<p>Specialties:</p>
 					<p>HTML5 &#8226; CSS3 &#8226; Bootstrap &#8226; JavaScript &#8226; jQuery &#8226; Landing Page Design &#8226; Squeeze Page Design &#8226; Sales Page Design &#8226; Problem solving</p>
-					<button id="exposeContactBtn" type="submit" class="btn btn-primary"><i class="ion-ios-mail"></i>Leave A Message</button><button id="exposePortfolioBtn" type="submit" class="btn btn-primary"><i class="ion-ios-folder"></i>Check Out My Latest Work</button>
+					<a href="#contact-modal" class="btn btn-primary"><i class="ion-ios-mail"></i>Leave A Message</a>
+					<a href="#portfolio-modal" class="btn btn-primary"><i class="ion-ios-folder"></i>Check Out My Latest Work</a>
 				</div>
 			</div>
-			<div id="contactSection" class="modalWindow">
-				<div id="contact" class="modalBody">
-					<div id="contactHeader" class="modalHeader"><span id="concealContactBtn" class="closeBtn">&times;</span></div>
-					<div id="contactBody" class="modalContent">
-						<div class="titleImage"><img src="resources/images/skdas-seated.webp" alt="myImage"/></div>
-						<hr/>
-						<h1>Contact Me</h1>
-						<hr/>
-						<form id="contactForm" action="https://mailthis.to/sanjeev.kumar.das@outlook.com" method="POST" encType="multipart/form-data">
-							<div class="formElements"><input type="text" name="name" id="name" placeholder="Enter Your Name" required/></div>
-							<div class="formElements"><input type="email" name="_replyto" id="email" placeholder="Enter Your Email" required/></div>
-							<div class="formElements"><textarea name="message" id="message" placeholder="Message..." required></textarea></div>
-							<input type="hidden" name="_subject" value="Contact form submitted"><input type="hidden" name="_honeypot" value=""><input type="hidden" name="_confirmation" value="Thank you! Your email has been sent."><button type="submit" class="btn btn-primary"><i class="ion-ios-send"></i>Send</button>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div id="portfolioSection" class="modalWindow">
-				<div id="portfolio" class="modalBody">
-					<div id="portfolioHeader" class="modalHeader"><span id="concealPortfolioBtn" class="closeBtn">&times;</span></div>
-					<div id="portfolioBody" class="modalContent">
-						<div class="container">
-							<h1>My Portfolio</h1>
-							<div class="row">
-								<div class="col-md-4 col-sm-6 marginTop10Px marginBottom10Px"><a href="resources/images/1-original.webp" target="_blank" data-lightbox="portfolio"><img src="resources/images/1.webp" alt="Team3" class="img-fluid"/></a></div>
-								<div class="col-md-4 col-sm-6 marginTop10Px marginBottom10Px"><a href="resources/images/2-original.webp" target="_blank" data-lightbox="portfolio"><img src="resources/images/2.webp" alt="Team3" class="img-fluid"/></a></div>
-								<div class="col-md-4 col-sm-6 marginTop10Px marginBottom10Px"><a href="resources/images/3-original.webp" target="_blank" data-lightbox="portfolio"><img src="resources/images/3.webp" alt="Team3" class="img-fluid"/></a></div>
-								<div class="col-md-4 col-sm-6 marginTop10Px marginBottom10Px"><a href="resources/images/4-original.webp" target="_blank" data-lightbox="portfolio"><img src="resources/images/4.webp" alt="Team3" class="img-fluid"/></a></div>
-								<div class="col-md-4 col-sm-6 marginTop10Px marginBottom10Px"><a href="resources/images/5-original.webp" target="_blank" data-lightbox="portfolio"><img src="resources/images/5.webp" alt="Team3" class="img-fluid"/></a></div>
-								<div class="col-md-4 col-sm-6 marginTop10Px marginBottom10Px"><a href="resources/images/6-original.webp" target="_blank" data-lightbox="portfolio"><img src="resources/images/6.webp" alt="Team3" class="img-fluid"/></a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="footer" class="contentBoxSmall">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 col-sm-12 rightAligned">
-							<p class="footerText">
-								Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> &#8226; SanjeevKumarDas &#8226; All Rights Reserved
-							</p>
-						</div>
-						<div class="col-md-6 col-sm-12 leftAligned">
-							<p class="footerText">Designed by Sanjeev Kumar Das</p>
-						</div>
-					</div>
+		<!-- 'Contact' modal begins -->
+		<div id="contact-modal">
+			<div class="popup">
+				<a href="#" class="close-modal"><i class="ion-ios-close-circle-outline"></i></a>
+				<div id="contact">
+					<div class="title-image"><img src="resources/images/skdas-seated.webp" alt="myImage"/></div>
+					<hr/>
+					<h1>Contact Me</h1>
+					<hr/>
+					<form id="contact-form" action="https://mailthis.to/sanjeev.kumar.das@outlook.com" method="POST">
+						<div class="form-elements"><input type="text" name="name" id="name" placeholder="Enter Your Name" required/></div>
+						<div class="form-elements"><input type="email" name="_replyto" id="email" placeholder="Enter Your Email" required/></div>
+						<div class="form-elements"><textarea name="message" id="message" placeholder="Message..." required></textarea></div>
+						<button type="submit" class="btn btn-primary"><i class="ion-ios-send"></i>Send</button>
+					</form>
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="resources/js/main.js"></script>
+		<!-- 'Contact' modal ends -->
+		<!-- 'Portfolio' modal begins -->
+		<div id="portfolio-modal">
+			<div class="popup">
+				<a href="#" class="close-modal"><i class="ion-ios-close-circle-outline"></i></a>
+				<div id="portfolios">
+						<h1>My Portfolio</h1>
+						<div id="ro">
+							<div class="item"><a href="resources/images/1-original.webp" target="_blank" data-lightbox="portfolio"><img src="resources/images/1.webp" alt="Team3" class="img-fluid"/></a></div>
+							<div class="item"><a href="resources/images/2-original.webp" target="_blank" data-lightbox="portfolio"><img src="resources/images/2.webp" alt="Team3" class="img-fluid"/></a></div>
+							<div class="item"><a href="resources/images/3-original.webp" target="_blank" data-lightbox="portfolio"><img src="resources/images/3.webp" alt="Team3" class="img-fluid"/></a></div>
+							<div class="item"><a href="resources/images/4-original.webp" target="_blank" data-lightbox="portfolio"><img src="resources/images/4.webp" alt="Team3" class="img-fluid"/></a></div>
+							<div class="item"><a href="resources/images/5-original.webp" target="_blank" data-lightbox="portfolio"><img src="resources/images/5.webp" alt="Team3" class="img-fluid"/></a></div>
+							<div class="item"><a href="resources/images/6-original.webp" target="_blank" data-lightbox="portfolio"><img src="resources/images/6.webp" alt="Team3" class="img-fluid"/></a></div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<!-- 'Portfolio' modal ends -->
+		</div>
 	</body>
 </html>
