@@ -195,13 +195,14 @@ hr {
 	line-height: 1;
 	text-decoration: none;
 	color: #007bff;
-	font-size: 2.5rem;
-	font-weight: 700;
+	font-size: 4.5rem;
+	font-weight: 900;
+	transition: all .2s ease;
 }
 
 .popup .close-modal:hover,
 .popup .close-modal:active {
-	color: #28b485;
+	color: #3395FF;
 }
 
 #contact {
