@@ -37,23 +37,22 @@
 	contactForm.getElementsByTagName('button')[0].addEventListener('click', function (ev) {
 		ev.preventDefault();
 		var data = new FormData(contactForm);
-		// // Submits form data to a Google Spreadsheet
-		// if (contactForm == document.forms[1]) {
-		// 	var scriptURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdNo8tURNDtQ-rbsIdvxIOKXGeZFtQmSXFQ0NNJ8W8QyXGa3w/formResponse?';
-		// 	fetch(scriptURL, {
-		// 			method: 'POST',
-		// 			mode: 'no-cors',
-		// 			cache: 'no-cache',
-		// 			credentials: 'omit',
-		// 			headers: {
-		// 				'Content-Type': 'application/json'
-		// 			},
-		// 			redirect: 'follow',
-		// 			body: data
-		// 		})
-		// 		.then(response => console.log('Success!', response))
-		// 		.catch(error => console.error('Error!', error.message));
-		// }
+		// Submits form data to a Google Spreadsheet
+		var scriptURL = 'https://docs.google.com/forms/d/e/1FAIpQLSe9xjlIwHaS5y-Y1Ofa25hpPhx5hMvTfq4OOWSwaqMbScywyQ/formResponse?';
+		fetch(scriptURL, {
+				method: 'POST',
+				mode: 'no-cors',
+				cache: 'no-cache',
+				credentials: 'omit',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				redirect: 'follow',
+				body: data
+			})
+			.then(response => console.log('Success!', response))
+			.catch(error => console.error('Error!', error.message));
+		// Sends an AJAX request
 		ajax(contactForm.method, contactForm.action, data, contactForm, success, error);
 	});
 });
