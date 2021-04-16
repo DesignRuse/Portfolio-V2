@@ -32,30 +32,40 @@
 					<a href="#portfolio-modal" class="btn btn-primary"><i class="ion-ios-folder"></i>Check Out My Latest Work</a>
 				</div>
 			</div>
-		<!-- 'Contact' modal begins -->
-		<div id="contact-modal">
-			<div class="popup">
-				<a href="#" class="close-modal"><i class="ion-ios-close-circle-outline"></i></a>
-				<div id="contact">
-					<div class="title-image"><img src="resources/images/skdas-seated.webp" alt="myImage"/></div>
-					<hr/>
-					<h1>Contact Me</h1>
-					<hr/>
-					<form id="contact-form" action="https://mailthis.to/sanjeev.kumar.das@outlook.com" method="POST">
-						<div class="form-elements"><input type="text" name="name" id="name" placeholder="Enter Your Name" required/></div>
-						<div class="form-elements"><input type="email" name="_replyto" id="email" placeholder="Enter Your Email" required/></div>
-						<div class="form-elements"><textarea name="message" id="message" placeholder="Message..." required></textarea></div>
-						<button type="submit" class="btn btn-primary"><i class="ion-ios-send"></i>Send</button>
-					</form>
+			<!-- 'Contact' modal begins -->
+			<div id="contact-modal">
+				<div class="popup">
+					<a href="#" class="close-modal"><i class="ion-ios-close-circle-outline"></i></a>
+					<div id="contact">
+						<div class="title-image"><img src="resources/images/skdas-seated.webp" alt="myImage"/></div>
+						<hr/>
+						<h1>Contact Me</h1>
+						<hr/>
+						<form id="contact-form" action="https://formsubmit.co/932a3e3ae7e8c98832893be9bd2ed12e" target="_self" method="POST">
+							<input type="text" name="_honey" style="display:none" />
+							<input type="hidden" name="_captcha" value="false" />
+							<input type="hidden" name="_template" value="table" />
+							<div class="form-elements"><input type="text" name="name" id="name" placeholder="Enter Your Name" required/></div>
+							<div class="form-elements"><input type="email" name="email" id="email" placeholder="Enter Your Email" required/></div>
+							<div class="form-elements"><textarea name="message" id="message" placeholder="Message..." required></textarea></div>
+							<button type="submit" class="btn btn-primary"><i class="ion-ios-send"></i>Send</button>
+						</form>
+						<!-- 'Memo' modal begins -->	
+						<div id="memo-modal">
+							<div id="memo">
+								<p id="memo-text"></p>
+							</div>
+						</div>
+						<!-- 'Memo' modal ends -->	
+					</div>
 				</div>
 			</div>
-		</div>
-		<!-- 'Contact' modal ends -->
-		<!-- 'Portfolio' modal begins -->
-		<div id="portfolio-modal">
-			<div class="popup">
-				<a href="#" class="close-modal"><i class="ion-ios-close-circle-outline"></i></a>
-				<div id="portfolios">
+			<!-- 'Contact' modal ends -->
+			<!-- 'Portfolio' modal begins -->
+			<div id="portfolio-modal">
+				<div class="popup">
+					<a href="#" class="close-modal"><i class="ion-ios-close-circle-outline"></i></a>
+					<div id="portfolios">
 						<h1>My Portfolio</h1>
 						<div id="ro">
 							<div class="item"><a href="resources/images/1-original.webp" target="_blank" data-lightbox="portfolio"><img src="resources/images/1.webp" alt="Team3" class="img-fluid"/></a></div>
@@ -65,10 +75,12 @@
 							<div class="item"><a href="resources/images/5-original.webp" target="_blank" data-lightbox="portfolio"><img src="resources/images/5.webp" alt="Team3" class="img-fluid"/></a></div>
 							<div class="item"><a href="resources/images/6-original.webp" target="_blank" data-lightbox="portfolio"><img src="resources/images/6.webp" alt="Team3" class="img-fluid"/></a></div>
 						</div>
+					</div>
 				</div>
 			</div>
+			<!-- 'Portfolio' modal ends -->
 		</div>
-		<!-- 'Portfolio' modal ends -->
-		</div>
+		<script type="text/javascript" src="resources/js/main.js"></script>
 	</body>
 </html>
+

@@ -26,7 +26,7 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	background-color: #f0c420;
-    height: 100vh;
+	height: 100vh;
 }
 
 
@@ -38,7 +38,8 @@ h1 {
 	color: #1c8adb;
 	text-align: center;
 	font-family: 'Playfair Display', serif;
-	font-size: 3.1rem; /*31px*/
+	font-size: 3.1rem;
+	/*31px*/
 	font-weight: 700;
 }
 
@@ -46,10 +47,13 @@ h2 {
 	color: #1c8adb;
 	text-align: center;
 	font-family: 'Playfair Display', serif;
-	font-size: 1.7rem; /*17px*/
+	font-size: 1.7rem;
+	/*17px*/
 	font-weight: 700;
-	margin-bottom: 2rem; /*2rem*/
+	margin-bottom: 2rem;
+	/*2rem*/
 }
+
 
 /*-------------------------------------------*/
 /*-------- H TAGS ---------------------------*/
@@ -63,7 +67,7 @@ h2 {
 hr {
 	padding: 0;
 	border: 0;
-	height: 1px; /*1px*/
+	height: 1px;
 	background-image: linear-gradient(left, rgba(240, 196, 32, 0), rgba(240, 196, 32, 0.75), rgba(240, 196, 32, 0));
 	background-image: -webkit-linear-gradient(left, rgba(240, 196, 32, 0), rgba(240, 196, 32, 0.75), rgba(240, 196, 32, 0));
 	background-image: -moz-linear-gradient(left, rgba(240, 196, 32, 0), rgba(0, 0, 0, 0.75), rgba(240, 196, 32, 0));
@@ -73,9 +77,29 @@ hr {
 	text-align: center;
 }
 
+
 /*-------------------------------------------*/
 /*-------- HORIZONTAL LINES -----------------*/
 /*-------------------------------------------*/
+
+
+/*--------------------------------------------------------*/
+/*-------------------- CLASSES INVOKED BY JAVASCRIPT -----*/
+/*--------------------------------------------------------*/
+
+.success {
+	background: rgb(28,138,219);
+	background: linear-gradient(90deg, rgba(28,138,219,1) 0%, rgba(0,123,255,1) 35%, rgba(51,149,255,1) 100%);  
+}
+
+.error {
+	background-image: linear-gradient(to right, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8));  
+}
+
+
+/*--------------------------------------------------------*/
+/*-------------------- CLASSES INVOKED BY JAVASCRIPT -----*/
+/*--------------------------------------------------------*/
 
 #wrapper {
 	width: 100%;
@@ -214,6 +238,7 @@ hr {
 	border-radius: 8px;
 	text-align: center;
 	margin: 0 auto;
+	position: relative;
 }
 
 #contact-form {
@@ -262,6 +287,61 @@ hr {
 	margin-right: .8rem;
 }
 
+#contact #memo-modal {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 11;
+	opacity: 0;
+	display: none;
+	-webkit-animation: status 60s ease-in-out forwards;
+	animation: status 60s ease-in-out forwards;
+}
+
+#memo-modal #memo {
+	width: 80%;
+	height: 49.44375772558714%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1rem;
+	border-radius: 3rem;
+	-webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+	box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+	display: table;
+	clip-path: polygon(92% 25%, 87% 25%, 55% 0%, 65% 25%, 0% 25%, 0% 49%, 0% 81%, 0% 100%, 42% 100%, 61% 100%, 100% 100%, 100% 77%, 100% 46%, 100% 25%);
+}
+
+/* #memo::before {
+	content: '';
+	display: inline-block;
+	width: 12%;
+	height: 15%;
+	background: inherit;
+	position: absolute;
+	top: -15%;
+	right: calc(18% - 6%);
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+} */
+
+#memo #memo-text {
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-align: center;
+	word-wrap: break-word;
+}
+
 #portfolios {
 	width: 100%;
 	height: auto;
@@ -302,3 +382,5 @@ hr {
 	transform: scale(1.1);
 	transition: 1s;
 }
+
+
