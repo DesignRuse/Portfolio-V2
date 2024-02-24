@@ -101,12 +101,12 @@ hr {
 /*--------------------------------------------------------*/
 
 .success {
-	background: rgb(28,138,219);
-	background: linear-gradient(90deg, rgba(28,138,219,1) 0%, rgba(0,123,255,1) 35%, rgba(51,149,255,1) 100%);  
+	background: rgb(28, 138, 219);
+	background: linear-gradient(90deg, rgba(28, 138, 219, 1) 0%, rgba(0, 123, 255, 1) 35%, rgba(51, 149, 255, 1) 100%);
 }
 
 .error {
-	background-image: linear-gradient(to right, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8));  
+	background-image: linear-gradient(to right, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8));
 }
 
 
@@ -450,5 +450,3 @@ hr {
 	transform: scale(1.02);
 	transition: cubic-bezier(0.07, 1.41, 0.82, 1.41) .2s
 }
-
-
