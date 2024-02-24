@@ -9,6 +9,17 @@
 	box-sizing: border-box;
 }
 
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none
+}
+
+img {
+	max-width: 100%
+}
+
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
@@ -185,7 +196,6 @@ hr {
 	width: 100%;
 	height: 100vh;
 	background-size: cover;
-	/* background-color: rgba(0, 0, 0, 0.8); */
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -344,45 +354,101 @@ hr {
 	word-wrap: break-word;
 }
 
-#portfolios {
+#portfolio {
 	width: 100%;
-	height: auto;
-	background-color: rgba(255, 255, 255, 0.97);
-	padding: 2rem 1.5rem 1.5rem 1.5rem;
-	border-radius: 8px;
-	text-align: center;
-	margin: 0 auto;
-}
-
-#portfolios #ro {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	align-items: center
+}
+
+#portfolio #photo-and-caption {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center
+}
+
+#photo-and-caption a {
+	display: block
+}
+
+#photo-and-caption img {
+	width: 12rem;
+	height: 12rem;
+	border-radius: 50%;
+	border: .3rem solid #1c8adb;
+	background-color: #f0c420;
+	margin: 0 auto .85rem auto;
+	display: block
+}
+
+#photo-and-caption h1 {
+	color: #3395FF;
+	margin: 0 auto .85rem auto
+}
+
+#portfolio #link-btns {
+	width: 100%;
+	max-width: 68rem;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#link-btns .link-btn {
+	width: 100%;
+	height: 5.6rem;
+	padding: 1rem 1.5rem;
+	background-color: #3395FF;
+	font-size: 1.3rem;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	border-radius: 1000px;
+	margin-top: 1.7rem;
+	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	align-items: center;
 }
 
-.item {
-	padding: 2rem;
-	flex: 0 0 33.33%;
-	transition: 1s all ease;
+.link-btn .link-btn-icon {
+	width: 4rem;
+	height: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.item img {
-	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+.link-btn p {
+	margin: 0 .5rem;
 }
 
-.item:hover {
-	transform: scale(1.1);
-}
-
-#portfolio a {
+.link-btn-icon img {
 	display: block;
-	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 100%;
+	border-radius: 50%
 }
 
-#portfolio a:hover {
-	transform: scale(1.1);
-	transition: 1s;
+.link-btn .copy-url {
+	width: 3.8rem;
+	height: 3.8rem;
+	border-radius: 50%;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.link-btn .copy-url svg {
+	width: 2rem;
+	height: 2rem;
+	fill: #3395FF;
+}
+
+.link-btn:hover {
+	transform: scale(1.02);
+	transition: cubic-bezier(0.07, 1.41, 0.82, 1.41) .2s
 }
 
 

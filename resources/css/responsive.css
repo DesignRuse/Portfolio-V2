@@ -7,10 +7,6 @@
 		font-weight: 900
 	}
 
-	#portfolios #ro {
-		flex-direction: column;
-	}
-
 	.item {
 		flex: 0 0 100%;
 	}
