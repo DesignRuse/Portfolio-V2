@@ -230,7 +230,7 @@
   // (XOR with KEY, then base64) and is decoded at the moment the form is sent; it is
   // never written into the page. To change it, see GOOGLE-SEO-NEXT-STEPS.md, step 1f.
   var KEY = 'Pv2#skd';
-  var FORM_BLOB = 'IxdcSRYOEiYdWVYeChY0F0FQMwQRJBpdTBhFBz8b';   // FormSubmit target (address or alias)
+  var FORM_BLOB = 'Z0dXGhUPVmFDAhJKCFxhQFQaRFsHZRBQRkEPVzQXBEc=';   // FormSubmit target (address or alias)
   function decodeBlob(blob) {
     var raw = window.atob(blob), out = '';
     for (var i = 0; i < raw.length; i++) out += String.fromCharCode(raw.charCodeAt(i) ^ KEY.charCodeAt(i % KEY.length));
