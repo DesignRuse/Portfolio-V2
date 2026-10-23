@@ -351,7 +351,9 @@
 
     setSending(true);
     var controller = 'AbortController' in window ? new AbortController() : null;
-    var timeout = controller ? setTimeout(function () { controller.abort(); }, 15000) : null;
+    var timeout = controller ? setTimeout(function () { controller.abort(); }, 60000) : null;
+    // FormSubmit can take 10-30 seconds to reply, so reassure the visitor while they wait.
+    var slowHint = setTimeout(function () { submitLabel.textContent = 'Still sending, please wait…'; }, 6000);
 
     fetch(formEndpoint(), {
       method: 'POST',
@@ -375,11 +377,12 @@
       })
       .catch(function (err) {
         // Keep everything the visitor typed so they can simply try again.
-        var hint = err && err.name === 'AbortError' ? 'The connection timed out. ' : '';
+        var hint = err && err.name === 'AbortError' ? 'The server took too long to reply, so it may still arrive. ' : '';
         setStatus('error', 'Sorry, your message couldn’t be sent.', hint + 'Please try again in a moment. Your message is still in the form.');
       })
       .then(function () {
         clearTimeout(timeout);
+        clearTimeout(slowHint);
         setSending(false);
       });
   });
